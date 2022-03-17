@@ -1,0 +1,56 @@
+com/myscript/iink/uireferenceimplementation/ImageDrawer.java
+ com.myscript.iink.uireferenceimplementation.ImageDrawer
+com/myscript/iink/uireferenceimplementation/OfflineSurfaceManager.java
+ com.myscript.iink.uireferenceimplementation.OfflineSurfaceManager
+com/myscript/iink/uireferenceimplementation/InputController.java
+ com.myscript.iink.uireferenceimplementation.InputController
+com/myscript/iink/uireferenceimplementation/LayerView.java
+ com.myscript.iink.uireferenceimplementation.LayerView
+ com.myscript.iink.uireferenceimplementation.LayerView$1
+com/myscript/iink/uireferenceimplementation/FontMetricsProvider.java
+ com.myscript.iink.uireferenceimplementation.FontMetricsProvider
+ com.myscript.iink.uireferenceimplementation.FontMetricsProvider$1
+ com.myscript.iink.uireferenceimplementation.FontMetricsProvider$2
+ com.myscript.iink.uireferenceimplementation.FontMetricsProvider$FontKey
+ com.myscript.iink.uireferenceimplementation.FontMetricsProvider$IValueProvider
+com/myscript/iink/uireferenceimplementation/Canvas.java
+ com.myscript.iink.uireferenceimplementation.Canvas
+ com.myscript.iink.uireferenceimplementation.Canvas$1
+com/myscript/iink/uireferenceimplementation/FontUtils.java
+ com.myscript.iink.uireferenceimplementation.FontUtils
+com/myscript/iink/uireferenceimplementation/Path.java
+ com.myscript.iink.uireferenceimplementation.Path
+com/myscript/iink/uireferenceimplementation/SmartGuideView.java
+ com.myscript.iink.uireferenceimplementation.SmartGuideView
+ com.myscript.iink.uireferenceimplementation.SmartGuideView$1
+ com.myscript.iink.uireferenceimplementation.SmartGuideView$2
+ com.myscript.iink.uireferenceimplementation.SmartGuideView$2$1
+ com.myscript.iink.uireferenceimplementation.SmartGuideView$3
+ com.myscript.iink.uireferenceimplementation.SmartGuideView$4
+ com.myscript.iink.uireferenceimplementation.SmartGuideView$SmartGuideWord
+ com.myscript.iink.uireferenceimplementation.SmartGuideView$SmartGuideWordView
+ com.myscript.iink.uireferenceimplementation.SmartGuideView$SmartGuideWordView$1
+ com.myscript.iink.uireferenceimplementation.SmartGuideView$SmartGuideWordView$2
+ com.myscript.iink.uireferenceimplementation.SmartGuideView$TextBlockStyle
+ com.myscript.iink.uireferenceimplementation.SmartGuideView$UpdateCause
+com/myscript/iink/uireferenceimplementation/IRenderView.java
+ com.myscript.iink.uireferenceimplementation.IRenderView
+com/myscript/iink/uireferenceimplementation/ISizeListener.java
+ com.myscript.iink.uireferenceimplementation.ISizeListener
+com/myscript/iink/uireferenceimplementation/CustomTextSpan.java
+ com.myscript.iink.uireferenceimplementation.CustomTextSpan
+ com.myscript.iink.uireferenceimplementation.CustomTextSpan$1
+com/myscript/iink/uireferenceimplementation/ImageLoader.java
+ com.myscript.iink.uireferenceimplementation.ImageLoader
+ com.myscript.iink.uireferenceimplementation.ImageLoader$1
+com/myscript/iink/uireferenceimplementation/EditorView.java
+ com.myscript.iink.uireferenceimplementation.EditorView
+com/myscript/iink/uireferenceimplementation/BuildConfig.java
+ com.myscript.iink.uireferenceimplementation.BuildConfig
+com/myscript/iink/uireferenceimplementation/JiixDefinitions.java
+ com.myscript.iink.uireferenceimplementation.JiixDefinitions
+ com.myscript.iink.uireferenceimplementation.JiixDefinitions$Padding
+ com.myscript.iink.uireferenceimplementation.JiixDefinitions$Result
+ com.myscript.iink.uireferenceimplementation.JiixDefinitions$Word
+com/myscript/iink/uireferenceimplementation/IInputControllerListener.java
+ com.myscript.iink.uireferenceimplementation.IInputControllerListener
