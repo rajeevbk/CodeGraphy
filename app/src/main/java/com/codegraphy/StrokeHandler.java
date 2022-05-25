@@ -1,5 +1,7 @@
 package com.codegraphy;
 
+import static com.codegraphy.MainActivity.mCodeView;
+
 import android.util.Log;
 import android.view.MotionEvent;
 
@@ -10,7 +12,6 @@ import com.google.mlkit.vision.digitalink.Ink;
 
 import java.util.ArrayList;
 import java.util.List;
-
 public class StrokeHandler {
 
 
@@ -103,11 +104,10 @@ public class StrokeHandler {
     public void recognize() {
         //get recognizer
         DigitalInkRecognizer recognizer =  modelManager.getRecognizer();
-
         //get ink object
         Ink ink = getInkObject();
 
-        Log.i(TAG, ink.getStrokes().t)
+        //Log.i(TAG, ink.getStrokes().t)
         //process the Ink object
         recognizer.recognize(ink)
                 .addOnSuccessListener(

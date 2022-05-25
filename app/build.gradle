@@ -43,7 +43,7 @@ dependencies {
     api "com.myscript:iink:1.4.1" //application dependency - MyScript API.
     implementation project(':UIReferenceImplementation')
     implementation 'com.google.mlkit:digital-ink-recognition:17.0.0'
-
+    implementation 'com.github.tiagohm:CodeView:0.4.0'
 
 
 }

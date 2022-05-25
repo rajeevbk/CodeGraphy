@@ -1,0 +1,2 @@
+com/myscript/iink/uireferenceimplementation/test/BuildConfig.java
+ com.myscript.iink.uireferenceimplementation.test.BuildConfig

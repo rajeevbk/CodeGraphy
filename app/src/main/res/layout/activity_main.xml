@@ -14,22 +14,22 @@
         android:text="Clear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.749"
+        app:layout_constraintHorizontal_bias="0.329"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/writing_view"
-        app:layout_constraintVertical_bias="0.195" />
+        app:layout_constraintVertical_bias="0.136" />
 
     <com.codegraphy.WritingView
         android:id="@+id/writing_view"
-        android:layout_width="411dp"
-        android:layout_height="139dp"
+        android:layout_width="303dp"
+        android:layout_height="54dp"
         android:background="#80FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <Button
         android:id="@+id/recognize_button"
@@ -39,20 +39,41 @@
         android:text="Recognize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/writing_view"
-        app:layout_constraintVertical_bias="0.195" />
+        app:layout_constraintVertical_bias="0.136" />
 
     <com.codegraphy.EditTextView
-        android:singleLine="false"
         android:id="@+id/edit_text_view"
-        android:layout_width="354dp"
-        android:layout_height="308dp"
+        android:layout_width="267dp"
+        android:layout_height="187dp"
+        android:hint="@string/app_name"
+        android:singleLine="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recognize_button" />
+        app:layout_constraintTop_toBottomOf="@+id/recognize_button"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <br.tiagohm.codeview.CodeView
+        android:id="@+id/codeView"
+        android:layout_width="246dp"
+        android:layout_height="303dp"
+        android:layout_marginStart="90dp"
+        app:cv_font_size="14"
+        app:cv_highlight_line_number="36"
+        app:cv_show_line_number="true"
+        app:cv_start_line_number="0"
+        app:cv_wrap_line="true"
+        app:cv_zoom_enable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_text_view"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </br.tiagohm.codeview.CodeView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

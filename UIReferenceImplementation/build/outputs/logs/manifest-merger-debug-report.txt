@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml:1:1-67
-INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml:1:1-67
-INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml:1:1-67
+ADDED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml:1:1-67
+INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml:1:1-67
+INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml:1:1-67
 	package
-		ADDED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml:1:11-64
-		INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml
+		ADDED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml:1:11-64
+		INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml
+		INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml:1:1-67
+		ADDED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml:1:1-67
 uses-sdk
-INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml
+INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml
+INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml
+INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml
+INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml
+		INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml
+		ADDED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml
+		INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Rajeev\AndroidStudioProjects\CodeGraphy\UIReferenceImplementation\src\main\AndroidManifest.xml
+		INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml
+		ADDED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml
+		INJECTED from /home/rajeev/Desktop/GitHub/CodeGraphy/UIReferenceImplementation/src/main/AndroidManifest.xml
