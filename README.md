@@ -19,3 +19,4 @@ This code was derived from the sample here: https://github.com/googlesamples/mlk
 * Currently, the syntax highlighted "codeview" is not editable. Figure out how to create an editable python-syntax-highlighted codeview
 * Give the user the ability to insert common programming constructs using handwritten variables (e.g create a for loop around a variable)
 * Cleaning up the UI
+* The inserted code's indentation is handled by merely inserting a space before the text. Right now it supports only 3 levels, need a better way to do this.
