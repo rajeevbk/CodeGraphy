@@ -24,49 +24,39 @@ import androidx.navigation.ui.AppBarConfiguration;
 
 //import com.codegraphy.databinding.ActivityMainBinding;
 import com.google.android.gms.tasks.Tasks;
+
+import java.io.File;
+import java.io.FileWriter;
+
 import br.tiagohm.codeview.CodeView;
 import br.tiagohm.codeview.Language;
 import br.tiagohm.codeview.Theme;
 
 public class MainActivity extends AppCompatActivity implements CodeView.OnHighlightListener {
 
-    private static final String PYTHON_CODE =
-            "def swap ( a, b):\n" +
-            " tmp = a\n" +
-            " a = b\n" +
-            " b = tmp\n";
-
     @VisibleForTesting
     final StrokeHandler strokeHandler = new StrokeHandler();
     private final String TAG = "parameters";
-    private AppBarConfiguration appBarConfiguration;
     private ProgressDialog mProgressDialog;
     private int themePos = 0;
     public static CodeView mCodeView;
-
-    //private ActivityMainBinding binding;
-
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
 
-        Log.d(TAG, "------------------started MainActivity . . .-------------------");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         WritingView writingView = findViewById(R.id.writing_view);
         EditTextView editTextView = findViewById(R.id.edit_text_view);
         mCodeView =  findViewById(R.id.codeView);
         writingView.setStrokeHandler(strokeHandler);
         strokeHandler.setEditTextView(editTextView);
 
-        //editTextView.setStrokeHandler(strokeHandler);
 
         //set model parameters and recognizer
         strokeHandler.modelManager.setModelParametersAndRecognizer();
-
 
         //download model
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -98,40 +88,6 @@ public class MainActivity extends AppCompatActivity implements CodeView.OnHighli
                     return Tasks.forResult(null);
                 });
 
-        mCodeView.setOnHighlightListener(this)
-                .setTheme(Theme.ARDUINO_LIGHT)
-                .setCode(PYTHON_CODE)
-                .setLanguage(Language.PYTHON)
-                .setWrapLine(true)
-                .setFontSize(14)
-                .setZoomEnabled(true)
-                .setShowLineNumber(true)
-                .setStartLineNumber(1)
-                .apply();
-        editTextView.addTextChangedListener(new TextWatcher() {
-            final String FUNCTION = "def";
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                int index = s.toString().indexOf(FUNCTION);
-                if (index >= 0) {
-                    s.setSpan(
-                            new ForegroundColorSpan(Color.CYAN),
-                            index,
-                            index + FUNCTION.length(),
-                            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-                }
-            }
-        });
     }
 
     //check for network
@@ -158,6 +114,7 @@ public class MainActivity extends AppCompatActivity implements CodeView.OnHighli
         strokeHandler.reset();
         WritingView writingView = findViewById(R.id.writing_view);
         writingView.clear();
+        strokeHandler.getEditTextView().getText().clear();
     }
 
     @Override
@@ -186,6 +143,55 @@ public class MainActivity extends AppCompatActivity implements CodeView.OnHighli
 
     @Override
     public void onLineClicked(int lineNumber, String content) {
-        Toast.makeText(this, "line: " + lineNumber + " html: " + content, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "line: " + lineNumber + " python " + content, Toast.LENGTH_SHORT).show();
+    }
+
+    public void onClickSpace_1(View view) {
+        String code = strokeHandler.getEditTextView().getText().toString();
+        String prev = mCodeView.getCode();
+
+        String PYTHON_CODE = prev + code;
+
+        mCodeView.setOnHighlightListener(this)
+                .setTheme(Theme.ARDUINO_LIGHT)
+                .setCode(PYTHON_CODE)
+                .setLanguage(Language.PYTHON)
+                .setWrapLine(true)
+                .setFontSize(14)
+                .setZoomEnabled(true)
+                .setShowLineNumber(true)
+                .setStartLineNumber(1)
+                .apply();
+    }
+    public void onClickSpace_2(View view) {
+        String code = " " + strokeHandler.getEditTextView().getText().toString();
+        String prev = mCodeView.getCode();
+        String PYTHON_CODE = prev +  code ;
+        mCodeView.setOnHighlightListener(this)
+                .setTheme(Theme.ARDUINO_LIGHT)
+                .setCode(PYTHON_CODE)
+                .setLanguage(Language.PYTHON)
+                .setWrapLine(true)
+                .setFontSize(14)
+                .setZoomEnabled(true)
+                .setShowLineNumber(true)
+                .setStartLineNumber(1)
+                .apply();
+
+    }
+    public void onClickSpace_3(View view) {
+        String code = "  " + strokeHandler.getEditTextView().getText().toString();
+        String prev = mCodeView.getCode();
+        String PYTHON_CODE = prev +  code ;
+        mCodeView.setOnHighlightListener(this)
+                .setTheme(Theme.ARDUINO_LIGHT)
+                .setCode(PYTHON_CODE)
+                .setLanguage(Language.PYTHON)
+                .setWrapLine(true)
+                .setFontSize(14)
+                .setZoomEnabled(true)
+                .setShowLineNumber(true)
+                .setStartLineNumber(1)
+                .apply();
     }
 }

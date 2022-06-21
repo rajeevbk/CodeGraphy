@@ -2,7 +2,6 @@ package com.codegraphy;
 
 import android.view.View;
 
-import com.codegraphy.StrokeHandler.ContentChangedListener;
 import com.google.mlkit.vision.digitalink.Ink;
 
 import java.util.List;
@@ -23,13 +22,10 @@ import android.view.View;
 public class WritingView extends View //implements
 {
     private static final int STROKE_WIDTH_DP = 3;
-    private static final int MIN_BB_WIDTH = 10;
-    private static final int MIN_BB_HEIGHT = 10;
-    private static final int MAX_BB_WIDTH = 256;
-    private static final int MAX_BB_HEIGHT = 256;
+
     private final String TAG = "parameters";
     private final Paint recognizedStrokePaint;
-    //private final TextPaint textPaint;
+
     private final Paint currentStrokePaint;
     private final Paint canvasPaint;
 
@@ -42,6 +38,8 @@ public class WritingView extends View //implements
     public WritingView(Context context) {
         this(context, null);
     }
+
+    //create paint object, create canvas object,override onDraw with Canvas.
 
     public WritingView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -60,8 +58,7 @@ public class WritingView extends View //implements
         recognizedStrokePaint.setColor(0xFFFFCCFF); // Green
 
         currentStroke = new Path();
-        canvasPaint = new Paint(Paint.DITHER_FLAG);
-
+        canvasPaint = new Paint(Paint.DITHER_FLAG); // create canvas using paint object
 
     }
 
